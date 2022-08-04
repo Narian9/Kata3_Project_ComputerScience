@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <title>ProjectPokedex_ComputerScience</title>
+</head>
+<body>
+  <header>Pokedex</header>
+  <form action="" onsubmit="searchPokemon(event)">
+    <input type="text" name="pokemon" autocomplete="off" placeholder="¿Qué pokemon quieres ver?">
+  </form>
+  <div id="data-poke-card" class="poke-card">
+    <div id="data-poke-name" class="">Pokedex</div>
+    <div id="data-poke-img-container" class="img-container" >
+      <img id="data-poke-img" src="./assets/imag/shadow_pikac.jpg" alt="" class="poke-img">
+    </div>
+    <div id="data-poke-id"></div>
+    <div id="data-poke-types" class="poke-types"></div>
+    <div id="data-poke-stats" class="poke-stats"></div>
+
+
+  </div>
+
+
+<section class="main-section">
+    <section class="row" id="pokemonsRow"></section>
+</section>
+
+  <script src="/assets/js/ini.js"></script>
+  <script src="/assets/js/app.js"></script> 
+    
+
+</body>
+</html>

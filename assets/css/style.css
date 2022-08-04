@@ -1,0 +1,152 @@
+*{
+font-family: 'Gruppo', cursive;
+font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url(/assets/imag/pokemoncover.jpg);
+    background-repeat: repeat-y;
+    background-size:contain;
+}
+header{
+    background-color: rgba(11, 31, 255, 0.511);
+    color: #FFF;
+    margin: 0;
+    text-align: center;
+    font-size: xx-large;
+}
+form {
+    width: 280px;
+    margin: 20px auto;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 5px rgb(253, 136, 3);
+}
+button{
+    width: 50%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 0;
+    background-color: #ec4b06;
+}
+.poke-card {
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border: 1px solid black;
+}
+
+.poke-card::before {
+    content: '';
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed black;
+}
+
+.poke-img {
+    width: 180px;
+    border-radius: 50%;
+}
+.main-section {
+    margin-top: 2rem;
+
+    width: 100%;
+}
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.card {
+    background-color: rgba(249, 151, 5, 0.482);
+
+    display: grid;
+    grid-template-rows: 1fr 2fr 1.5fr;
+    
+    width: 50%;
+    height: 20rem;
+
+    padding: 1%;
+    margin: 5% auto;
+
+    border-radius: 5%;
+}
+
+.header_card {
+    font-size: 110%;
+    font-weight: bolder;
+
+    text-align: center;
+
+    margin: 1rem 1rem 0;
+}
+
+.section_card {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin:  0 1em 0;
+}
+
+.card_img {
+    width: 10rem;
+
+    border-radius: 5%;
+    
+    background-color: rgba(11, 31, 255, 0.511);
+}
+
+.footer_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 1em 1em
+}
+
+.pokemon_link {
+    color: #E2DCC8;
+    text-decoration: none;
+}
